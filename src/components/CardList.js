@@ -3,7 +3,7 @@ import Card from './Card';
 
 
 const CardList = ({robots}) =>  {
-    if (true) {throw new Error('not accepted')}
+    // if (true) {throw new Error('not accepted')}
     return (
         <div>
         {

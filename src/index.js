@@ -5,8 +5,17 @@ import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
 import 'tachyons';
 
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import {RobotsSearch} from './reducers';
+
+
+const store = createStore(RobotsSearch);
+
 
 ReactDOM.render(
-    <App/>, 
+    <Provider store = {store}>
+        <App />
+    </Provider>, 
     document.getElementById('root'));
 registerServiceWorker();
