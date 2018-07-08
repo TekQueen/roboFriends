@@ -5,13 +5,22 @@ import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
 import 'tachyons';
 
-import {createStore} from 'redux';
+import {createStore,
+        applyMiddleware,
+        combineReducers
+    } from 'redux';
 import {Provider} from 'react-redux';
-import {RobotsSearch} from './reducers';
+import {
+        RobotsSearch, 
+        requestRobots
+    } from './reducers';
+import {createLogger} from 'redux-logger';
+import thunkMiddleware from 'redux-thunk';
 
 
-const store = createStore(RobotsSearch);
-
+const logger = createLogger();
+const rootReducer = combineReducers({RobotsSearch, requestRobots});
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
 
 ReactDOM.render(
     <Provider store = {store}>
