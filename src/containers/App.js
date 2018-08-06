@@ -6,6 +6,7 @@ import ErrorBoundry from '../components/ErrorBoundry';
 
 import {setSearchField, setRequestRobots} from '../actions';
 import {connect} from 'react-redux';
+import CounterButton from '../components/CounterButton';
 
 
 const mapStateToProps = state => ({
@@ -39,6 +40,7 @@ class App extends Component{
                 <div className = 'tc'>
                     <h1>Robo Friends</h1>
                     <SeachBox searchChange = {onSearchChange} />
+                    <CounterButton />
                     <Scroll>
                         <ErrorBoundry>
                             <CardList robots = {filteredRobots} />
