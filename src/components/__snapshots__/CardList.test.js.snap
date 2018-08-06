@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardList /> a 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardList
+    robots={
+        Array [
+            Object {
+              "email": "mahta@gmail.com",
+              "id": 1,
+              "name": "mahta",
+              "username": "mahta",
+            },
+            Object {
+              "email": "mehrad@gmail.com",
+              "id": 2,
+              "name": "mehrad",
+              "username": "mehrad",
+            },
+            Object {
+              "email": "zohreh@gmail.com",
+              "id": 3,
+              "name": "zohreh",
+              "username": "zohreh",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Card
+          email="mahta@gmail.com"
+          id={1}
+          name="mahta"
+          username="mahta"
+/>,
+        <Card
+          email="mehrad@gmail.com"
+          id={2}
+          name="mehrad"
+          username="mehrad"
+/>,
+        <Card
+          email="zohreh@gmail.com"
+          id={3}
+          name="zohreh"
+          username="zohreh"
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "email": "mahta@gmail.com",
+          "id": 1,
+          "name": "mahta",
+          "username": "mahta",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "email": "mehrad@gmail.com",
+          "id": 2,
+          "name": "mehrad",
+          "username": "mehrad",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "email": "zohreh@gmail.com",
+          "id": 3,
+          "name": "zohreh",
+          "username": "zohreh",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Card
+            email="mahta@gmail.com"
+            id={1}
+            name="mahta"
+            username="mahta"
+/>,
+          <Card
+            email="mehrad@gmail.com"
+            id={2}
+            name="mehrad"
+            username="mehrad"
+/>,
+          <Card
+            email="zohreh@gmail.com"
+            id={3}
+            name="zohreh"
+            username="zohreh"
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "email": "mahta@gmail.com",
+            "id": 1,
+            "name": "mahta",
+            "username": "mahta",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "email": "mehrad@gmail.com",
+            "id": 2,
+            "name": "mehrad",
+            "username": "mehrad",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "email": "zohreh@gmail.com",
+            "id": 3,
+            "name": "zohreh",
+            "username": "zohreh",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

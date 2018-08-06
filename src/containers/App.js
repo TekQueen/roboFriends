@@ -7,6 +7,7 @@ import ErrorBoundry from '../components/ErrorBoundry';
 import {setSearchField, setRequestRobots} from '../actions';
 import {connect} from 'react-redux';
 
+
 const mapStateToProps = state => ({
     searchField: state.RobotsSearch.searchField,
     robots: state.requestRobots.robots,
