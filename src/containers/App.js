@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import CardList from '../components/CardList';
-import Scroll from '../components/Scroll';
-import SeachBox from '../components/SearchBox';
-import ErrorBoundry from '../components/ErrorBoundry';
+
+import MainPage from '../components/MainPage';
 
 import {setSearchField, setRequestRobots} from '../actions';
 import {connect} from 'react-redux';
-import CounterButton from '../components/CounterButton';
+
 
 
 const mapStateToProps = state => ({
@@ -23,36 +21,15 @@ const mapDispatchToProps = dispatch => ({
     onRequestRobots: () => dispatch(setRequestRobots())
 })
         
-
+// We don't even need to test this :)
 class App extends Component{
 
     render() {
-        const {searchField, onSearchChange, robots, isPending} = this.props;
-
-        const filteredRobots = robots.filter(
-            robot =>  
-                robot.name.toLowerCase().includes(searchField.toLowerCase())
-        );
-
-        return (isPending) ?
-                <h1>Loading</h1>
-            : (
-                <div className = 'tc'>
-                    <h1>Robo Friends</h1>
-                    <SeachBox searchChange = {onSearchChange} />
-                    <CounterButton />
-                    <Scroll>
-                        <ErrorBoundry>
-                            <CardList robots = {filteredRobots} />
-                        </ErrorBoundry>
-                    </Scroll>
-                </div>
-            );
-        
-    }
-
-    componentDidMount() {
-        this.props.onRequestRobots();
+        return (
+            <MainPage 
+                {...this.props}
+            />
+        )
     }
 }
 
